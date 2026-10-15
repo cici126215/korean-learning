@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한국어 학습 · 韩语课文学习</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <div class="brand-mark"></div>
+      <div>
+        <div class="brand-title">한국어 학습</div>
+        <div class="brand-sub">韩语课文学习</div>
+      </div>
+    </div>
+    <div class="lesson-picker">
+      <span>当前课文</span>
+      <select id="lessonSelect"></select>
+    </div>
+  </div>
+</header>
+
+<nav class="tabs wrap">
+  <button class="tab active" data-tab="dialogue">课文</button>
+  <button class="tab" data-tab="vocab">生词</button>
+  <button class="tab" data-tab="grammar">语法</button>
+  <button class="tab" data-tab="shadow">跟读</button>
+</nav>
+
+<main class="wrap">
+  <section id="lessonHead" class="lesson-head"></section>
+  <section id="tab-dialogue" class="tab-panel active"></section>
+  <section id="tab-vocab" class="tab-panel"></section>
+  <section id="tab-grammar" class="tab-panel"></section>
+  <section id="tab-shadow" class="tab-panel"></section>
+</main>
+
+<button id="floatStop" class="float-stop hidden" title="停止播放（Esc）">■ 停止播放</button>
+
+<footer class="site-footer">罗马音采用韩国国立国语院罗马字标记法 · 跟读语音由浏览器韩语语音合成（Web Speech API）</footer>
+
+<script src="js/lessons.js"></script>
+<script src="js/tts.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
